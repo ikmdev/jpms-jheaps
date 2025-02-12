@@ -13,7 +13,7 @@
     <artifactId>jheaps</artifactId>
     <packaging>jar</packaging>
     <name>JHeaps</name>
-    <version>0.14-r8</version>
+    <version>0.14-r8-SNAPSHOT</version>
 
     <properties>
         <!-- change release here-->
