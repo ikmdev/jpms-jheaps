@@ -54,6 +54,7 @@
   </issueManagement>
   <properties>
     <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
+    <core.artifact.release>r8</core.artifact.release>
     <core.artifact.version>0.14</core.artifact.version>
     <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     <maven-license-plugin.version>4.1</maven-license-plugin.version>
