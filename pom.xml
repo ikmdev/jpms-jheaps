@@ -13,7 +13,7 @@
     <artifactId>jheaps</artifactId>
     <packaging>jar</packaging>
     <name>JHeaps</name>
-    <version>0.14-r11-SNAPSHOT</version>
+    <version>0.14-r11-fix-module-name-SNAPSHOT</version>
 
     <properties>
         <!-- change release here-->
