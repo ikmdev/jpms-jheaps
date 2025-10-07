@@ -18,8 +18,7 @@
     <properties>
         <!-- change release here-->
         <core.artifact.version>0.14</core.artifact.version>
-        <core.artifact.release>r11</core.artifact.release>
-
+        <core.artifact.release>r12</core.artifact.release>
         <maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
     </properties>
 
@@ -137,7 +136,7 @@
                                         <version>${core.artifact.version}</version>
                                     </artifact>
                                     <moduleInfoSource>
-                                        module dev.ikm.jpms.jheaps {
+                                        module org.jheaps {
                                             exports org.jheaps;
                                             exports org.jheaps.annotations;
                                             exports org.jheaps.array;
