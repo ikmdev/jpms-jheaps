@@ -62,15 +62,15 @@ jobs:
            VERSION=$(mvn help:evaluate -D'expression=project.version' -q -D'forceStdout')
            echo "VERSION=$VERSION"
            IFS='-'
-           read -r arr <<< "$VERSION"
+           read -ra arr <<< "$VERSION"
            for val in "${arr[@]}"
              do
                if [[ $val == r* ]]; then
                    RELEASE_PROPERTY=$val
                fi
              done
-            echo "$RELEASE_PROPERTY"
-            echo "::set-output name=PROPERTY::$RELEASE_PROPERTY"
+            echo "RELEASE_PROPERTY=$RELEASE_PROPERTY"
+            echo "PROPERTY=$RELEASE_PROPERTY" >> $GITHUB_OUTPUT
 
       - name: Update Release Candidate Property
         run: |
