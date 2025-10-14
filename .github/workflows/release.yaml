@@ -61,7 +61,7 @@ jobs:
         run: |
            echo "VERSION=$(mvn help:evaluate -D'expression=project.version' -q -D'forceStdout')"
            IFS='-'
-           read -rA arr <<< "$VERSION"
+           read -r arr <<< "$VERSION"
            for val in "${arr[@]}"
              do
                if [[ $val == r* ]]; then
