@@ -59,7 +59,8 @@ jobs:
         id: new_release_property
         shell: bash
         run: |
-           echo "VERSION=$(mvn help:evaluate -D'expression=project.version' -q -D'forceStdout')"
+           VERSION=$(mvn help:evaluate -D'expression=project.version' -q -D'forceStdout')
+           echo "VERSION=$VERSION"
            IFS='-'
            read -r arr <<< "$VERSION"
            for val in "${arr[@]}"
